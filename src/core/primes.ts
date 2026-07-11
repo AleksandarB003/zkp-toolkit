@@ -1,4 +1,4 @@
-import { randomBytes } from "crypto";
+import { randomBigInt } from "./random";
 
 export function modPow(base: bigint, exponent: bigint, modulus: bigint): bigint {
   if (modulus === 1n) return 0n;
@@ -16,17 +16,6 @@ export function modPow(base: bigint, exponent: bigint, modulus: bigint): bigint 
   }
 
   return result;
-}
-
-function randomBigInt(bits: number): bigint {
-  const bytes = Math.ceil(bits / 8);
-  const buffer = randomBytes(bytes);
-  let value = BigInt("0x" + buffer.toString("hex"));
-
-  const excessBits = bytes * 8 - bits;
-  value = value >> BigInt(excessBits);
-
-  return value;
 }
 
 export function isProbablePrime(n: bigint, rounds: number = 40): boolean {

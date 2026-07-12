@@ -1,7 +1,7 @@
-import { modPow, generateSafePrime, findGenerator } from "./primes";
-import { randomBigIntBelow } from "./random";
-import { computeChallenge } from "./fiatShamir";
-import type { PublicParams, KeyPair, Proof } from "./types";
+import { modPow, generateSafePrime, findGenerator } from "./primes.js";
+import { randomBigIntBelow } from "./random.js";
+import { computeChallenge } from "./fiatShamir.js";
+import type { PublicParams, KeyPair, Proof } from "./types.js";
 
 export function generateParams(bits: number = 128): PublicParams {
   const { p, q } = generateSafePrime(bits);

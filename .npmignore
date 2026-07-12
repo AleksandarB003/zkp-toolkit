@@ -1,0 +1,8 @@
+src
+tests
+docs
+*.log
+.gitignore
+tsconfig.json
+keys.json
+proof.json

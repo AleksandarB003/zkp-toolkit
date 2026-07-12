@@ -1,4 +1,4 @@
-import { randomBigInt } from "./random";
+import { randomBigInt } from "./random.js";
 
 export function modPow(base: bigint, exponent: bigint, modulus: bigint): bigint {
   if (modulus === 1n) return 0n;

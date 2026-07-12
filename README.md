@@ -1,5 +1,7 @@
 # Schnorr ZKP Toolkit
 
+[![npm version](https://img.shields.io/npm/v/schnorr-zkp-toolkit.svg)](https://www.npmjs.com/package/schnorr-zkp-toolkit)
+
 A CLI tool and TypeScript library for authentication using Schnorr zero knowledge proofs. Everything is implemented from scratch, no external cryptography libraries, just built in Node.js crypto module for random number generation and hashing.
 
 This started as part of my university thesis, where I built an IoT device authentication system using this exact protocol. This repo is that cryptographic core pulled out into its own standalone package, so it can be reused in other projects.
